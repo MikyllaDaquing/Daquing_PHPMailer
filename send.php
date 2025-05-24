@@ -26,8 +26,8 @@ if(isset($_POST['send'])) {
     $mail->Subject = $_POST['subject'];
     $mail->Body = $_POST['message'];
 
-    $mail->SMTPDebug = 2; // Or SMTP::DEBUG_SERVER for more detailed output
-    $mail->Debugoutput = 'html'; // Or 'echo' to display in the browser
+    $mail->SMTPDebug = 2; 
+    $mail->Debugoutput = 'html'; 
 
     $mail->SMTPOptions = array(
         'ssl' => array(
